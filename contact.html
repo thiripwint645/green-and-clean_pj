@@ -17,8 +17,11 @@
     }
     body {
       width: 100%;
-      min-height: 100vh;
-      background: linear-gradient(rgba(0, 140, 5, 0.1), rgba(63, 63, 63, 0.4)),
+      min-height: 50vh;
+      background: linear-gradient(
+          rgba(0, 140, 5, 0.1),
+          rgba(63, 63, 63, 0.4) 0%
+        ),
         url("./images/lionleaves.jpg");
       /* display: flex; */
       background-size: cover;
@@ -27,11 +30,11 @@
     }
     .box {
       max-width: 90%;
-      margin: 200px auto;
+      margin: 20vh auto;
       width: 500px;
       background: linear-gradient(
         40deg,
-        rgba(2, 0, 6, 0.8) 0%,
+        rgba(2, 0, 6, 0.8),
         rgba(47, 93, 20, 0.7) 3%
       );
     }
@@ -60,25 +63,56 @@
       background: transparent;
       outline: none;
     }
-    .form h3 {
+    form h3,
+    p {
       text-align: center;
       margin-bottom: 24px;
     }
     .box form .btn {
       margin-left: 50%;
       transform: translateX(-50%);
-      width: 120px;
-      height: 34px;
+      padding: 10px 140px;
+      /* width: 120px;
+      height: 34px; */
+      border-radius: 20px;
       border: none;
       outline: none;
       background: transparent;
-      border: 2px outset #19801d;
+      border: 3px outset #078743;
+      position: relative;
+    }
+
+    .btn::after {
+      content: "\27a4";
+      position: absolute;
+      right: -1px;
+      top: -1px;
+      color: #000;
+      line-height: 35px;
+      width: 34px;
+      height: 34px;
+      border-radius: 20px;
+      font-size: 17px;
+      background: #fff;
     }
     .box form .btn:hover {
       background-color: #19801d;
     }
+    .box form .internal input:hover {
+      background: linear-gradient(
+        65deg,
+        rgba(2, 0, 6, 0.8),
+        rgba(47, 93, 20, 0.7) 3%
+      );
+    }
     ::placeholder {
-      color: rgb(197, 197, 197);
+      color: #fff;
+      opacity: 0.6;
+    }
+    .box form input[type="text"]:focus,
+    .box form input[type="email"]:focus {
+      background-color: #19801d;
+      opacity: 0.9;
     }
     /* .form_input {
       display: flex;
@@ -89,20 +123,27 @@
   <body>
     <h1>Contact Us</h1>
     <div class="box">
-      <form action="itinerary.html" method="POST">
-        <h3>Get Update</h3>
+      <form action="contact.html" method="POST">
+        <h3>Get Updates</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-          alias veritatis aspernatur dolore qui laudantium quae neque labore
+          Subscribe to our newsletter to receive updates and special
+          announcements.
         </p>
         <div class="internal">
-          <input type="text" id="name" value required placeholder="*Name" />
+          <input
+            type="text"
+            id="name"
+            value
+            required
+            placeholder="*Enter Name"
+          />
         </div>
 
         <div class="internal">
           <input type="email" id="email" value required placeholder="*Email" />
         </div>
-        <input type="submit" class="btn" name="submit" />
+        <!-- <input type="submit" class="btn" name="submit" /> -->
+        <button type="submit" class="btn">Submit</button>
       </form>
     </div>
   </body>
