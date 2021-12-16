@@ -3,9 +3,39 @@
   padding: 0;
   box-sizing: border-box;
   color: #fff;
+  font-family: "Eczar";
 }
 body {
   background-color: #078743;
+}
+.up_arrow {
+  padding: 8px 0;
+  text-decoration: none;
+  font-size: 30px;
+  position: fixed;
+  width: 50px;
+  background-color: #000;
+  border: 3px solid rgb(58, 57, 57);
+  bottom: 10px;
+  right: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 30px;
+  transition: 0.8s;
+  opacity: 1;
+}
+.up_arrow a {
+  text-decoration: none;
+}
+.up_arrow a i {
+  color: #fff;
+  opacity: 1;
+  font-weight: bold;
+}
+.up_arrow:hover {
+  background-color: #078743;
+  border: 2px solid #fff;
+  opacity: 1;
 }
 footer {
   width: 100%;
@@ -15,15 +45,17 @@ footer {
   right: 0;
   background: #0b4220;
   height: auto;
-  font-family: cursive;
+
   padding-top: 40px;
 }
 .footer_content {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  min-width: 400px;
 }
 .footer_content h3 {
   text-align: center;
@@ -59,14 +91,13 @@ footer {
   font-size: 24px;
 }
 .social_icons a:hover i {
-  color: aqua;
-  /*👉color: #078743;👈*/
+  color: #4cdf15;
   font-size: 30px;
 }
 .footer_bottom {
   background: #05331b;
   width: 100vw;
-  padding: 20px 0;
+  padding: 15px 0;
   text-align: center;
 }
 .footer_bottom p {
@@ -83,7 +114,8 @@ footer {
   text-decoration: none;
 }
 .contact span {
-  font-size: 1.5em;
+  font-size: 1.9em;
+  text-transform: capitalize;
   font-variant: small-caps;
   margin: 0px auto;
   letter-spacing: 2px;
@@ -104,20 +136,47 @@ footer {
   outline: none;
 }
 .footer_button form input:hover {
-  border: 2px ridge #19801d;
+  border: 2px ridge #fff;
 }
 .footer_button form .sub_btn {
-  background-color: #19801d;
+  background-color: #fff;
   line-height: 30px;
   outline: none;
   border: 1px ridge #fff;
 }
 .footer_button form .sub_btn:hover {
   background-color: transparent;
-  border: 1px ridge #fff;
+  border: 2px solid white;
 }
 .footer_button form .sub_btn i {
+  color: #19801d;
   font-size: 21px;
-  padding: 1px 15px;
+  padding: 1px 24px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1061px) {
+  .footer_content {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 900px) {
+  .up_arrow {
+    position: relative;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 385px) {
+  .footer_bottom {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .up_arrow {
+    position: relative;
+    padding: 0;
+  }
 }

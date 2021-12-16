@@ -1,0 +1,288 @@
+* {
+  font-family: "Eczar";
+  color: #fff;
+}
+body {
+  /*👉 height: 150vh;👈*/
+  background-color: #078743;
+  margin: 0;
+  padding: 0;
+  /*👉  position: relative;👈*/
+  /*👉 height: 50vh;👈*/
+}
+.bg_img {
+  margin: 0;
+  padding: 0;
+}
+.typewriter h1 {
+  padding: 60px 50px;
+  margin: 0;
+  line-height: 75px;
+  letter-spacing: 5px;
+  font-size: 2.5em;
+  text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #fff, 0 0 20px #49ff18,
+    0 0 30px #ff18, 0 0 40px #fff, 0 0 55px #ff18, 0 0 75px #fff;
+}
+.para {
+  /*👉  position: absolute;👈*/
+  /*👉  width: 35%;
+  top: 32vh;
+  right: 85vh;👈*/
+  width: 35%;
+  margin: auto;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 6, 0.6) 100%,
+    rgba(47, 93, 20, 0.3) 0%
+  );
+}
+.animate__animated.animate__lightSpeedInRight {
+  animation-delay: 2s;
+  animation-duration: 3s;
+}
+.title_img {
+  width: 100%;
+  background-size: contain;
+  background-image: url(../images/bottles.jpg);
+  /*👉  height: 90vh;👈*/
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*👉  position: relative;👈*/
+  padding-bottom: 120px;
+}
+.two_plus {
+  padding-top: 30px;
+}
+/* table of contents */
+ul {
+  margin: 0;
+  margin-bottom: 450px;
+  padding: 0;
+  list-style: none;
+  background-color: rgb(130, 238, 157);
+}
+ul li {
+  float: left;
+  width: 350px;
+  height: 45px;
+  background-color: white;
+  text-align: justify;
+  font-size: 20px;
+  color: #fff;
+}
+ul li a {
+  text-decoration: none;
+  padding-left: 3%;
+  color: #19801d;
+  display: block;
+}
+ul li a:hover {
+  background-color: rgb(130, 238, 157);
+}
+ul li ul li {
+  display: none;
+  display: none;
+}
+ul li:hover ul li {
+  display: block;
+}
+.two_plus {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /*👉 padding-bottom: 30px;👈*/
+}
+.card {
+  background-color: #19801d;
+  box-shadow: 0px 0px 1px 2px black;
+  border-radius: 4px;
+}
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #fff; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+.table_container .card figcaption {
+  background-color: rgb(130, 238, 157);
+}
+.content h2,
+p {
+  color: #fff;
+  text-align: center;
+}
+.content p {
+  font-size: 1.3em;
+  line-height: 30px;
+  padding: 0 90px;
+  text-align: justify;
+}
+.content img {
+  border: 1px solid white;
+}
+.content img:hover {
+  transform: scale(0.8) rotate(360deg);
+
+  box-shadow: 0px 0px 3px rgb(102, 255, 148), 0px 0px 8px 2px #fff;
+}
+.part2 .table_container {
+  padding-left: 90px;
+}
+q {
+  color: rgb(130, 238, 157);
+}
+
+/* Responsive for recycling */
+@media screen and (max-width: 860px) {
+  .typewriter h1 {
+    letter-spacing: 0;
+  }
+  .two_plus {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 735px) {
+  ul li ul li {
+    display: none;
+    display: none;
+    display: block;
+  }
+  /*👉  .card {
+    margin-top: 200px;
+  }👈*/
+}
+@media screen and (max-width: 860px) {
+  .title_img {
+    width: 100%;
+  }
+  /*👉  .para {
+    right: 3%;
+    width: 50%;
+  }👈*/
+}
+@media screen and (max-width: 600px) {
+  ul li ul li {
+    display: none;
+    display: none;
+    display: block;
+  }
+  .typewriter h1 {
+    letter-spacing: 0;
+    font-size: 1.8em;
+  }
+  .title_img {
+    width: 100%;
+  }
+  /*👉  .para {
+    left: 3%;
+    right: 3%;
+    width: 99%;
+  }👈*/
+}
+@media screen and (max-width: 380px) {
+  .typewriter h1 {
+    letter-spacing: 0;
+    font-size: 1.5em;
+  }
+  .title_img {
+    width: 100%;
+  }
+  /*👉  .para {
+    left: 1%;
+    right: 1%;
+    bottom: 4%;
+    width: 99%;
+  }👈*/
+}
+
+/* card */
+.related_stories {
+  text-align: center;
+}
+.container {
+  display: flex;
+  width: 930px;
+  height: auto;
+  margin: 30px auto;
+  padding: 0;
+}
+.box {
+  width: 34%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-right: 3%;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  transition: 0.9;
+}
+.box p {
+  font-size: 1.1em;
+  text-align: justify;
+}
+.box img {
+  height: 300px;
+}
+
+.box:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
+  cursor: pointer;
+  opacity: 0.9;
+  transform: scale(1.1) translate(0px, -3px);
+}
+
+.box img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.container .box h3,
+.box p {
+  text-align: center;
+  color: #19801d;
+}
+p {
+  font-size: 15px;
+  padding: 0 5px;
+}
+/* responsive for stories card */
+@media (max-width: 1060px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 860px) {
+  .container {
+    width: 85%;
+    display: block;
+  }
+  .box {
+    width: 98%;
+    margin-bottom: 10%;
+    margin-left: 3%;
+  }
+}
