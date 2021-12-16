@@ -24,10 +24,6 @@ body {
     0 0 30px #ff18, 0 0 40px #fff, 0 0 55px #ff18, 0 0 75px #fff;
 }
 .para {
-  /*👉  position: absolute;👈*/
-  /*👉  width: 35%;
-  top: 32vh;
-  right: 85vh;👈*/
   width: 35%;
   margin: auto;
   background: linear-gradient(
@@ -36,9 +32,10 @@ body {
     rgba(47, 93, 20, 0.3) 0%
   );
 }
-.animate__animated.animate__lightSpeedInRight {
-  animation-delay: 2s;
-  animation-duration: 3s;
+
+.para {
+  animation: lightSpeedInRight;
+  animation-duration: 6s;
 }
 .title_img {
   width: 100%;
@@ -65,7 +62,7 @@ ul {
 ul li {
   float: left;
   width: 350px;
-  height: 45px;
+  height: 53px;
   background-color: white;
   text-align: justify;
   font-size: 20px;
@@ -134,12 +131,34 @@ p {
   color: #fff;
   text-align: center;
 }
+
 .content p {
   font-size: 1.3em;
   line-height: 30px;
   padding: 0 90px;
   text-align: justify;
 }
+hr {
+  padding: 0 90px;
+  border-width: 1px 0 0;
+  margin: 18px 0;
+  border-bottom-color: white;
+}
+.content p:hover {
+  background-size: 100% 2px;
+
+  background: linear-gradient(
+    250deg,
+    rgba(143, 164, 147, 0.5) 1%,
+    rgba(62, 110, 46, 1) 12%
+  );
+  background-position: bottom left;
+  transition: all ease-in-out 1s;
+  margin: 18px 0;
+  animation: forwards;
+  animation-duration: 6s;
+}
+
 .content img {
   border: 1px solid white;
 }
@@ -153,6 +172,8 @@ p {
 }
 q {
   color: rgb(130, 238, 157);
+}
+.content h2 {
 }
 
 /* Responsive for recycling */
@@ -179,10 +200,6 @@ q {
   .title_img {
     width: 100%;
   }
-  /*👉  .para {
-    right: 3%;
-    width: 50%;
-  }👈*/
 }
 @media screen and (max-width: 600px) {
   ul li ul li {
@@ -197,11 +214,6 @@ q {
   .title_img {
     width: 100%;
   }
-  /*👉  .para {
-    left: 3%;
-    right: 3%;
-    width: 99%;
-  }👈*/
 }
 @media screen and (max-width: 380px) {
   .typewriter h1 {
@@ -238,7 +250,7 @@ q {
   background: white;
   border-radius: 10px;
   margin-bottom: 5%;
-  transition: 0.9;
+  transition: 0.8s;
 }
 .box p {
   font-size: 1.1em;
@@ -269,13 +281,67 @@ p {
   font-size: 15px;
   padding: 0 5px;
 }
+main {
+  width: 100%;
+  height: 11vh;
+  margin: 44px auto;
+  justify-content: center;
+}
+.story h1 {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+.story h1 {
+  color: #000;
+  text-transform: capitalize;
+  background-image: linear-gradient(
+    90deg,
+    rgba(143, 164, 147, 1) 0%,
+    rgba(76, 223, 21, 1) 46%,
+    rgba(171, 220, 163, 1) 97%
+  );
+}
+/* sticky notes */
+.stickynote_container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(#6ec792, #fff955);
+  text-align: center;
+}
+.stickynote_container h1 {
+  transform: skew(-20deg) rotate(-5deg);
+  color: #000;
+  text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
+  padding: 114px 20px;
+}
+
 /* responsive for stories card */
 @media (max-width: 1060px) {
+  .stickynote_container {
+    width: 90%;
+  }
   .container {
+    width: 100%;
+  }
+  .story h1 {
     width: 100%;
   }
 }
 @media (max-width: 860px) {
+  .stickynote_container {
+    width: 90%;
+  }
+  .story h1 {
+    width: 100%;
+  }
   .container {
     width: 85%;
     display: block;
