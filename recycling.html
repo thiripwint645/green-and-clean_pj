@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Thiri Pwint">
+    <meta name="author" content="Thiri Pwint" />
     <title>Recycling</title>
     <link rel="stylesheet" href="css/recycling.css" />
   </head>
@@ -26,6 +26,7 @@
     href="../Green and clean nature project/css/hamburger.css"
   />
   <link rel="icon" type="image/x-icon" href="images/Echo Logo-1.jpg" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <body>
     <!-- title_box -->
@@ -33,18 +34,18 @@
       <div class="typewriter">
         <h1>Recycling & Environment</h1>
       </div>
-      <!-- <h1 class="title animate__animated animate__f">Recycling</h1> -->
-        <p class="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
-          reprehenderit necessitatibus aliquid consequuntur debitis nihil.
-          Voluptatum, debitis. Asperiores, delectus? Omnis iste consequatur
-          impedit vero blanditiis totam eaque maiores rem consequuntur? Lorem
-          ipsum, dolor sit amet consectetur adipisicing elit. Eos nisi magni
-          officiis provident facere error. Atque accusantium suscipit nesciunt
-          eligendi
-        </p>
-      </div>
+
+      <p class="para">
+        Recycling is the process of converting waste materials into new
+        materials and objects. The recyclability of a material depends on its
+        ability to reacquire the properties it had in its original state. It is
+        an alternative to "conventional" waste disposal that can save material
+        and help lower greenhouse gas emissions. It can also prevent the waste
+        of potentially useful materials and reduce the consumption of fresh raw
+        materials, reducing energy use, air pollution and water pollution.
+      </p>
     </div>
+    <!-- </div> -->
     <!-- menu+recycle_img -->
     <div class="two_plus">
       <div class="table_container">
@@ -55,14 +56,15 @@
                 <span class="hamburger-inner"></span>
               </span>
             </span>
+            <span class="menu">menu</span>
             <ul>
-              <li><a href=""> Conserving natural resources</a></li>
-              <li><a href="">Protecting ecosystems and wildlife</a></li>
-              <li><a href=""> Mobile Changer Basket</a></li>
-              <li><a href=""> Reducing demand for raw materials</a></li>
-              <li><a href="">Bird Feeder</a></li>
-              <li><a href="">Vertical Hanging Garden</a></li>
-              <li><a href=""> Wine Bottle</a></li>
+              <li><a href="#"> Conserving natural resources</a></li>
+              <li><a href="#">Protecting ecosystems and wildlife</a></li>
+              <li><a href="#"> Mobile Changer Basket</a></li>
+              <li><a href="#"> Reducing demand for raw materials</a></li>
+              <li><a href="#">Bird Feeder</a></li>
+              <li><a href="#">Vertical Hanging Garden</a></li>
+              <li><a href="#"> Wine Bottle</a></li>
             </ul>
           </li>
         </ul>
@@ -75,16 +77,18 @@
             style="width: 350px; height: 400px"
           />
           <figcaption>
-            <h4>On a lighter note, but to think about......</h4>
-            <p>To contribute for plastic recycling, Please don't apply.</p>
+            <h2>On a lighter note, but to think about...</h2>
+            <p class="fig_cap">
+              To contribute for plastic recycling, Please don't apply
+            </p>
           </figcaption>
         </figure>
       </div>
     </div>
     <!-- list of recycling -->
-    <div class="list_part">
+    <div data-aos="fade-right" class="list_part">
       <div class="content">
-        <h2>1.Conserving natural resources</h2>
+        <h2>Conserving natural resources</h2>
         <p>
           The world's natural resources are finite, and some are in very short
           supply. At a fundamental level:
@@ -108,8 +112,10 @@
             style="width: 370px; height: 290px"
           />
         </center>
-      <hr>
-        <h2>2.Protecting ecosystems and wildlife</h2>
+      </div>
+
+      <div data-aos="fade-down" class="content">
+        <h2>Protecting ecosystems and wildlife</h2>
         <p>
           Recycling reduces the need to grow, harvest or extract new raw
           materials from the Earth. That in turn lessens the harmful disruption
@@ -124,16 +130,16 @@
           starting to get low around the world
         </p>
         <center>
-          
           <img
             src="../Green and clean nature project/images/leopard.jpg"
             alt=""
             style="width: 370px; height: 290px"
           />
         </center>
-      <hr>
+      </div>
 
-        <h2>3.Mobile Changer Basket</h2>
+      <div data-aos="flip-up" class="content">
+        <h2>Mobile Changer Basket</h2>
         <p>
           Instead of tossing away those old bottles of lotion or shampoo, make
           yourself a phone holder for charging. Created from an upcycled bottle,
@@ -149,9 +155,10 @@
             style="width: 370px; height: 290px"
           />
         </center>
-      <hr>
+      </div>
 
-        <h2>4.Reducing demand for raw materials</h2>
+      <div data-aos="zoom-in" class="content">
+        <h2>Reducing demand for raw materials</h2>
         <p>
           The world's increasing demand for new stuff has led to more of the
           poorest and most vulnerable people (for example, those living around
@@ -169,9 +176,10 @@
             style="width: 370px; height: 290px"
           />
         </center>
-        <hr>
+      </div>
 
-        <h2>5.Vertical Hanging Garden</h2>
+      <div data-aos="fade-up-right" class="content">
+        <h2>Vertical Hanging Garden</h2>
         <p>
           Vertical gardens are a great solution to many challenges within urban
           spaces and recycling plastic bottles is a great way to make one for
@@ -189,38 +197,73 @@
             style="width: 370px; height: 290px"
           />
         </center>
-      <hr>
+      </div>
 
-        <!-- <h2>6.Lamps</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
-          accusamus quibusdam nam nemo quasi modi quis ullam aut! Reprehenderit
-          perspiciatis aliquam quae quod dolor molestias voluptates distinctio
-          labore facere consequatur? Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Laborum, accusamus quibusdam nam nemo quasi modi
-          quis ullam aut! Reprehenderit perspiciatis aliquam quae quod dolor
-          molestias voluptates distinctio labore facere consequatur? Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Laborum, accusamus
-          quibusdam nam nemo quasi modi quis ullam aut! Reprehenderit
-          perspiciatis aliquam quae quod dolor molestias voluptates distinctio
-          labore facere consequatur?
-        </p>
+      <div data-aos="zoom-in" class="content">
+        <h2>Recycling Teaching aid Video for Kids</h2>
         <center>
-          <img
-            src="../Green and clean nature project/images/bambooplant.jpg"
-            alt=""
-            style="width: 370px; height: 290px"
-          />
-        </center> -->
+          <section>
+            <video width="400" height="240" controls>
+              <source src="./multimedia/movie.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </section>
+        </center>
+      </div>
+    </div>
+    <!-- recycling_idea_card -->
+    <div data-aos="fade-right" class="idea">
+      <h2 class="idea_title">Plastic Bottle Recycling Idea</h2>
+    </div>
+    <div data-aos="fade-right" class="idea_box">
+      <div class="box1">
+        <figure class="cards imghvr-push-left">
+          <img src="images/piggy.jpg" alt="plastic_home" />
+          <figcaption>
+            <p class="header">Create a Piggy Bank</p>
+            <p>
+              Repurposing plastic containers can save you money in more ways
+              than one. Create a plastic bottle piggy bank and start cashing in
+              on your craftiness.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="box1">
+        <figure class="cards imghvr-slide-down">
+          <img src="images/planter.jpg" alt="planter " />
+          <figcaption>
+            <p class="header">Plastic Bottle Planter</p>
+            <p>
+              Creating a cat planter is actually a way to reuse plastic. Spark
+              your DIY spirit with a simple project that turns 2-liters into a
+              useful and appealing indoor planter.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="box1">
+        <figure class="cards imghvr-slide-down">
+          <img src="images/supply_cups.jpg" alt="suppiy_cups" />
+          <figcaption>
+            <p class="header">Plastic Bottle Supply Cups</p>
+            <p>
+              Office building waste is one of the leading contributors to the
+              rise of landfills. Reuse the plastic bottles to make cups for
+              housing pens and supplies at the office, or craft supplies at
+              home.
+            </p>
+          </figcaption>
+        </figure>
       </div>
     </div>
     <!-- related stories -->
     <main>
-      <div class="story">
+      <div data-aos="flip-up" class="story">
         <h1 class="related_stories">Related Stories</h1>
       </div>
     </main>
-    <div class="container">
+    <div data-aos="fade-up-left" class="container">
       <div class="box">
         <img src="../Green and clean nature project/images/donation1.jpg" />
         <h3>Ways to Donate</h3>
@@ -244,13 +287,20 @@
         />
         <h3>Demand a Law to end plastic pollution</h3>
         <p>
-          Please sign our petition to tell the government that you demand a new
-          law to end plastic pollution.
+          Plastic pollution and sea pollution are part of legacy.Please sign our
+          petition to tell the government that you demand a new law to end
+          plastic pollution.
         </p>
       </div>
     </div>
-    <div class="stickynote_container ">
+    <div class="stickynote_container">
       <h1>Thank You</h1>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
   </body>
 </html>

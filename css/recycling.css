@@ -1,18 +1,12 @@
 * {
   font-family: "Eczar";
   color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-  /*👉 height: 150vh;👈*/
   background-color: #078743;
-  margin: 0;
-  padding: 0;
-  /*👉  position: relative;👈*/
-  /*👉 height: 50vh;👈*/
-}
-.bg_img {
-  margin: 0;
-  padding: 0;
 }
 .typewriter h1 {
   padding: 60px 50px;
@@ -31,15 +25,13 @@ body {
     rgba(2, 0, 6, 0.6) 100%,
     rgba(47, 93, 20, 0.3) 0%
   );
-}
-
-.para {
   animation: lightSpeedInRight;
   animation-duration: 6s;
+  font-size: 1.1em;
 }
+
 .title_img {
   width: 100%;
-  background-size: contain;
   background-image: url(../images/bottles.jpg);
   /*👉  height: 90vh;👈*/
   background-attachment: fixed;
@@ -84,6 +76,13 @@ ul li ul li {
 ul li:hover ul li {
   display: block;
 }
+ul li .menu {
+  color: black;
+}
+.menu {
+  font-size: 1.3em;
+  font-weight: bold;
+}
 .two_plus {
   display: flex;
   justify-content: space-around;
@@ -91,7 +90,7 @@ ul li:hover ul li {
   /*👉 padding-bottom: 30px;👈*/
 }
 .card {
-  background-color: #19801d;
+  background-color: #fff;
   box-shadow: 0px 0px 1px 2px black;
   border-radius: 4px;
 }
@@ -124,28 +123,45 @@ ul li:hover ul li {
   }
 }
 .table_container .card figcaption {
-  background-color: rgb(130, 238, 157);
+  background-color: #fff;
+}
+
+.fig_cap {
+  font-size: 1.2em;
+  color: #000;
+  padding-top: 20px;
+  font-weight: bold;
+  padding-top: 20px;
 }
 .content h2,
 p {
   color: #fff;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .content p {
   font-size: 1.3em;
   line-height: 30px;
-  padding: 0 90px;
+  padding: 20px 90px;
   text-align: justify;
+  transition: 0.5s;
 }
-hr {
-  padding: 0 90px;
-  border-width: 1px 0 0;
-  margin: 18px 0;
-  border-bottom-color: white;
+.content h2::after {
+  content: "";
+  width: 200px;
+  height: 2px;
+  display: block;
+  margin: auto;
+  margin-top: 1px;
+  background-color: #fff;
+  box-shadow: 2px 2px rgba(143, 164, 147, 0.5) 1%;
+}
+.content {
+  padding-bottom: 30px;
 }
 .content p:hover {
-  background-size: 100% 2px;
+  background-size: 100% 3px;
 
   background: linear-gradient(
     250deg,
@@ -161,11 +177,15 @@ hr {
 
 .content img {
   border: 1px solid white;
+  transition: 0.5s;
 }
 .content img:hover {
-  transform: scale(0.8) rotate(360deg);
+  transform: scale(0.6) rotate(360deg);
 
   box-shadow: 0px 0px 3px rgb(102, 255, 148), 0px 0px 8px 2px #fff;
+}
+section .vdo_caption {
+  text-align: center;
 }
 .part2 .table_container {
   padding-left: 90px;
@@ -173,7 +193,44 @@ hr {
 q {
   color: rgb(130, 238, 157);
 }
-.content h2 {
+/* idea_cards */
+.idea_box {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.idea_box img {
+  min-height: 350px;
+  min-width: 200px;
+}
+.box1 {
+  min-height: 350px;
+  width: 340px;
+}
+.idea_title {
+  text-align: center;
+}
+.idea h2 {
+  margin-bottom: 30px;
+}
+.idea h2::after {
+  content: "";
+  width: 200px;
+  height: 2px;
+  display: block;
+  margin: auto;
+  margin-top: 1px;
+  background-color: #fff;
+  box-shadow: 2px 2px rgba(143, 164, 147, 0.5) 1%;
+}
+figcaption p {
+  text-align: center;
+  font-size: 1.2em;
+}
+figcaption .header {
+  padding-bottom: 20px;
 }
 
 /* Responsive for recycling */
@@ -192,14 +249,6 @@ q {
     display: none;
     display: block;
   }
-  /*👉  .card {
-    margin-top: 200px;
-  }👈*/
-}
-@media screen and (max-width: 860px) {
-  .title_img {
-    width: 100%;
-  }
 }
 @media screen and (max-width: 600px) {
   ul li ul li {
@@ -211,24 +260,12 @@ q {
     letter-spacing: 0;
     font-size: 1.8em;
   }
-  .title_img {
-    width: 100%;
-  }
 }
 @media screen and (max-width: 380px) {
   .typewriter h1 {
     letter-spacing: 0;
     font-size: 1.5em;
   }
-  .title_img {
-    width: 100%;
-  }
-  /*👉  .para {
-    left: 1%;
-    right: 1%;
-    bottom: 4%;
-    width: 99%;
-  }👈*/
 }
 
 /* card */
@@ -295,13 +332,12 @@ main {
   flex-direction: column;
 }
 .story h1 {
-  color: #000;
+  color: #fff;
   text-transform: capitalize;
   background-image: linear-gradient(
-    90deg,
-    rgba(143, 164, 147, 1) 0%,
-    rgba(76, 223, 21, 1) 46%,
-    rgba(171, 220, 163, 1) 97%
+    251deg,
+    rgba(62, 110, 46, 1) 52%,
+    rgba(62, 110, 46, 1) 64%
   );
 }
 /* sticky notes */
@@ -320,9 +356,13 @@ main {
   transform: skew(-20deg) rotate(-5deg);
   color: #000;
   text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
-  padding: 114px 20px;
+  /*👉  padding: 114px 20px;👈*/
 }
-
+.stickynote_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* responsive for stories card */
 @media (max-width: 1060px) {
   .stickynote_container {
@@ -350,5 +390,21 @@ main {
     width: 98%;
     margin-bottom: 10%;
     margin-left: 3%;
+  }
+}
+/* responsive for idea cards */
+
+@media (max-width: 956px) {
+  .idea_box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box1 {
+    width: 50%;
+    margin-bottom: 10%;
+  }
+  .box1 p {
+    font-size: 0.5em;
   }
 }
