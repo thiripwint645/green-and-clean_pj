@@ -40,7 +40,7 @@ a i:hover {
 a {
   text-decoration: none;
 }
-.col2 h1 {
+.col2 h2 {
   padding-top: 20px;
   text-align: center;
 }
@@ -96,7 +96,6 @@ a {
   background-color: #abdca3;
   box-shadow: 0 0px 2px 2px #1e4826;
 }
-
 .page-wrapper .container .col2 .form-wrapper input::placeholder {
   color: #078743;
 }
@@ -109,6 +108,10 @@ a {
   box-shadow: 0 0px 2px 2px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   font-size: 18px;
+}
+input,
+textarea {
+  color: green;
 }
 .page-wrapper .container .col2 .form-wrapper textarea:focus {
   background-color: #abdca3;
@@ -165,5 +168,36 @@ a {
   a i {
     position: absolute;
     /* padding-top: 0px; */
+  }
+}
+#status {
+  width: 100%;
+  text-align: center;
+  opacity: 1;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+#status.success {
+  animation: status 4s 1;
+  background-color: white;
+  color: green;
+}
+#status.error {
+  background-color: red;
+  animation: status 4s 1;
+  color: white;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
   }
 }
