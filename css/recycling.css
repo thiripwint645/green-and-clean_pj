@@ -17,6 +17,7 @@ body {
   text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #fff, 0 0 20px #49ff18,
     0 0 30px #ff18, 0 0 40px #fff, 0 0 55px #ff18, 0 0 75px #fff;
 }
+/* background_image */
 .para {
   width: 35%;
   margin: auto;
@@ -33,17 +34,19 @@ body {
 .title_img {
   width: 100%;
   background-image: url(../images/bottles.jpg);
-  /*👉  height: 90vh;👈*/
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  /*👉  position: relative;👈*/
   padding-bottom: 120px;
 }
+/* menu+recycle_img */
 .two_plus {
   padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-/* table of contents */
+/* menu */
 ul {
   margin: 0;
   margin-bottom: 450px;
@@ -83,17 +86,12 @@ ul li .menu {
   font-size: 1.3em;
   font-weight: bold;
 }
-.two_plus {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  /*👉 padding-bottom: 30px;👈*/
-}
 .card {
   background-color: #fff;
   box-shadow: 0px 0px 1px 2px black;
   border-radius: 4px;
 }
+/* title_typewriter */
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid #fff; /* The typwriter cursor */
@@ -111,7 +109,6 @@ ul li .menu {
     width: 100%;
   }
 }
-
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from,
@@ -122,10 +119,10 @@ ul li .menu {
     border-color: #fff;
   }
 }
+/* menu+recycle_img */
 .table_container .card figcaption {
   background-color: #fff;
 }
-
 .fig_cap {
   font-size: 1.2em;
   color: #000;
@@ -133,6 +130,7 @@ ul li .menu {
   font-weight: bold;
   padding-top: 20px;
 }
+/* list of recycling  */
 .content h2,
 p {
   color: #fff;
@@ -147,6 +145,7 @@ p {
   text-align: justify;
   transition: 0.5s;
 }
+/* underline */
 .content h2::after {
   content: "";
   width: 200px;
@@ -157,24 +156,30 @@ p {
   background-color: #fff;
   box-shadow: 2px 2px rgba(143, 164, 147, 0.5) 1%;
 }
+q {
+  color: rgb(130, 238, 157);
+}
 .content {
   padding-bottom: 30px;
 }
 .content p:hover {
   background-size: 100% 3px;
-
   background: linear-gradient(
+    90deg,
+    rgba(2, 0, 6, 0.3) 0%,
+    rgba(47, 93, 20, 0.3) 0%
+  );
+  /*👉background: linear-gradient(
     250deg,
     rgba(143, 164, 147, 0.5) 1%,
     rgba(62, 110, 46, 1) 12%
-  );
+  );👈*/
   background-position: bottom left;
   transition: all ease-in-out 1s;
   margin: 18px 0;
   animation: forwards;
   animation-duration: 6s;
 }
-
 .content img {
   border: 1px solid white;
   transition: 0.5s;
@@ -184,14 +189,12 @@ p {
 
   box-shadow: 0px 0px 3px rgb(102, 255, 148), 0px 0px 8px 2px #fff;
 }
+/* video */
 section .vdo_caption {
   text-align: center;
 }
 .part2 .table_container {
   padding-left: 90px;
-}
-q {
-  color: rgb(130, 238, 157);
 }
 /* idea_cards */
 .idea_box {
@@ -232,58 +235,23 @@ figcaption p {
 figcaption .header {
   padding-bottom: 20px;
 }
-
-/* Responsive for recycling */
-@media screen and (max-width: 860px) {
-  .typewriter h1 {
-    letter-spacing: 0;
-  }
-  .two_plus {
-    flex-wrap: wrap;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 735px) {
-  ul li ul li {
-    display: none;
-    display: none;
-    display: block;
-  }
-}
-@media screen and (max-width: 600px) {
-  ul li ul li {
-    display: none;
-    display: none;
-    display: block;
-  }
-  .typewriter h1 {
-    letter-spacing: 0;
-    font-size: 1.8em;
-  }
-}
-@media screen and (max-width: 380px) {
-  .typewriter h1 {
-    letter-spacing: 0;
-    font-size: 1.5em;
-  }
-}
-
-/* card */
+/* related_stories_card */
 .related_stories {
   text-align: center;
 }
 .container {
   display: flex;
-  width: 930px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
   height: auto;
-  margin: 30px auto;
   padding: 0;
 }
 .box {
-  width: 34%;
+  width: 320px;
   height: auto;
   border: 1px solid #ccc;
-  margin-right: 3%;
+  margin-right: 2%;
   background: white;
   border-radius: 10px;
   margin-bottom: 5%;
@@ -296,7 +264,6 @@ figcaption .header {
 .box img {
   height: 300px;
 }
-
 .box:hover {
   box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
   cursor: pointer;
@@ -318,6 +285,7 @@ p {
   font-size: 15px;
   padding: 0 5px;
 }
+/* related_stories_bg_color */
 main {
   width: 100%;
   height: 11vh;
@@ -356,17 +324,51 @@ main {
   transform: skew(-20deg) rotate(-5deg);
   color: #000;
   text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
-  /*👉  padding: 114px 20px;👈*/
 }
 .stickynote_container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/* responsive for stories card */
+/* Responsive for type_writer+two_plus */
+@media screen and (max-width: 860px) {
+  .typewriter h1 {
+    letter-spacing: 0;
+  }
+  .two_plus {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 735px) {
+  ul li ul li {
+    display: none;
+    display: none;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  ul li ul li {
+    display: none;
+    display: none;
+    display: block;
+  }
+  .typewriter h1 {
+    letter-spacing: 0;
+    font-size: 1.8em;
+  }
+}
+@media screen and (max-width: 380px) {
+  .typewriter h1 {
+    letter-spacing: 0;
+    font-size: 1.5em;
+  }
+}
+
+/* responsive for stories card +sticky_note+video */
 @media (max-width: 1060px) {
   .stickynote_container {
-    width: 90%;
+    width: 50%;
   }
   .container {
     width: 100%;
@@ -376,22 +378,25 @@ main {
   }
 }
 @media (max-width: 860px) {
+  video {
+    min-width: 320px;
+  }
   .stickynote_container {
-    width: 90%;
+    width: 50%;
   }
   .story h1 {
     width: 100%;
   }
   .container {
-    width: 85%;
-    display: block;
+    flex-direction: column;
+    align-items: center;
   }
   .box {
-    width: 98%;
+    width: 50%;
     margin-bottom: 10%;
-    margin-left: 3%;
   }
 }
+
 /* responsive for idea cards */
 
 @media (max-width: 956px) {
@@ -399,12 +404,19 @@ main {
     flex-direction: column;
     align-items: center;
   }
-
   .box1 {
     width: 50%;
     margin-bottom: 10%;
   }
+}
+@media (max-width: 531px) {
   .box1 p {
-    font-size: 0.5em;
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 475px) {
+  .box1 p {
+    font-size: 0.8em;
+    padding: 0;
   }
 }
