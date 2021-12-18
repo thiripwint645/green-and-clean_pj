@@ -19,7 +19,7 @@ body {
 }
 /* background_image */
 .para {
-  width: 35%;
+  width: 60%;
   margin: auto;
   background: linear-gradient(
     90deg,
@@ -141,7 +141,7 @@ p {
 .content p {
   font-size: 1.3em;
   line-height: 30px;
-  padding: 20px 90px;
+  padding: 20px 40px;
   text-align: justify;
   transition: 0.5s;
 }
