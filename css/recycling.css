@@ -295,6 +295,7 @@ main {
 .story h1 {
   width: 30%;
   text-align: center;
+  letter-spacing: 2px;
   display: flex;
   margin: auto;
   flex-direction: column;
@@ -303,9 +304,9 @@ main {
   color: #fff;
   text-transform: capitalize;
   background-image: linear-gradient(
-    251deg,
-    rgba(62, 110, 46, 1) 52%,
-    rgba(62, 110, 46, 1) 64%
+    180deg,
+    rgba(0, 0, 0, 0.1),
+    rgb(15, 155, 15)
   );
 }
 /* sticky notes */
@@ -317,18 +318,20 @@ main {
   margin: 30px auto;
   width: 300px;
   height: 300px;
-  background: linear-gradient(#6ec792, #fff955);
+  background: linear-gradient(180deg, rgb(220, 227, 91), rgb(69, 182, 73));
   text-align: center;
 }
 .stickynote_container h1 {
   transform: skew(-20deg) rotate(-5deg);
   color: #000;
   text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
+  transition: 0.6s;
 }
 .stickynote_container {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
 }
 /* Responsive for type_writer+two_plus */
 @media screen and (max-width: 860px) {
